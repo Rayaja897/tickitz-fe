@@ -2,7 +2,7 @@
   #now-showing .content {
     overflow-x: scroll;
     justify-content: flex-start !important;
-    gap: 10px;
+    gap: 15px;
   }
 
   #now-showing .content::-webkit-scrollbar {
@@ -10,13 +10,13 @@
   }
 
   #now-showing .content img {
-    width: 150px;
+    width: 200px
   }
 
   #upcoming-movies .content {
     overflow-x: scroll;
     justify-content: flex-start !important;
-    gap: 10px;
+    gap: 15px;
   }
 
   #upcoming-movies .content::-webkit-scrollbar {
@@ -24,7 +24,7 @@
   }
 
   #upcoming-movies .content img {
-    width: 150px;
+    width: 200px;
   }
 
   #upcoming-movies .Months-scroll::-webkit-scrollbar {
@@ -34,4 +34,5 @@
   #upcoming-movies .text-muted-mobile {
     font-size: 15px !important;
   }
+  
 }

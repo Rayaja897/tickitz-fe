@@ -11,7 +11,7 @@ function Movie(props) {
       </Link>
       <h5 className="text-center mt-3 single-text">{title}</h5>
       <p
-        className="text-muted text-center text text-muted-mobile"
+        className="text-muted text-center single-text text-muted-mobile"
         style={{ fontSize: "16px" }}
       >
         {genres?.map((item, key) => (

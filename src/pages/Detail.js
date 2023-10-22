@@ -1,4 +1,5 @@
 import "../style/Detail.css";
+import "../style/Detail.mobile.css";
 
 import React from "react";
 import axios from "axios";
@@ -12,6 +13,7 @@ function Detail() {
   const [detailMovie, setDetailMovie] = React.useState(null);
 
   React.useEffect(() => {
+    window.scrollTo(0,0)
     setTimeout(() => {
       axios
         .get("http://localhost:3000/api/movie.json")
@@ -40,7 +42,7 @@ function Detail() {
             {/* loading */}
             <div
               className="d-flex justify-content-center align-items-center"
-              style={{ height: "90vh", flexDirection: "column" }}
+              style={{ height: "70vh", flexDirection: "column" }}
             >
               <div className="spinner-border mb-2" role="status">
                 <span className="visually-hidden">Loading...</span>

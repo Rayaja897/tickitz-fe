@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -7,9 +8,9 @@ function Navbar() {
       <nav className="d-flex justify-content-between align-items-center">
         <div className="d-flex align-items-center gap-4">
           <img className="logo" src="/images/Logo.png" alt="logo" />
-          <a className="d-desktop" href="/">
+          <Link className="d-desktop" to="/">
             Home
-          </a>
+          </Link>
           <a className="d-desktop" href="/">
             List Movie
           </a>

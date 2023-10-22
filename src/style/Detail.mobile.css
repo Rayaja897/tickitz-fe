@@ -1,0 +1,11 @@
+@media screen and (min-width: 200px) and (max-width: 480px) {
+  #header_content .border-img {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  #header_content h1,
+  #header_content .genres {
+    text-align: center;
+  }
+}
