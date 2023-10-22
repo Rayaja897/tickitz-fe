@@ -31,15 +31,6 @@ h1 {
   font-size: 56px;
 }
 
-#now-showing {
-  background-color: #F5F6F8;
-  margin-top: 70px;
-}
-
-#upcoming-movies {
-  margin-top: 90px;
-}
-
 .btn-outline-primary {
   border-color: #5F2EEA;
   --bs-btn-color: #5F2EEA;
