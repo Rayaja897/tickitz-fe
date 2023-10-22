@@ -17,35 +17,6 @@
         width: 150px;
     }
     
-    #now-showing .content{
-        overflow-x: scroll;
-        justify-content: flex-start !important;
-        gap: 10px;
-    }
-    
-    #now-showing .content::-webkit-scrollbar{
-        display: none !important;
-    }
-    
-    #now-showing .content img{
-        width: 150px;
-    }
-    
-    
-    #upcoming-movies .content{
-        overflow-x: scroll;
-        justify-content: flex-start !important;
-        gap: 10px;
-    }
-    
-    #upcoming-movies .content::-webkit-scrollbar{
-        display: none !important;
-    }
-    
-    #upcoming-movies .content img{
-        width: 150px;
-    }
-    
     .Months-scroll{
         overflow-x: scroll;
         width: 100%;
@@ -58,9 +29,6 @@
         justify-content: flex-start;
     }
     
-    #upcoming-movies .Months-scroll::-webkit-scrollbar{
-        display: none !important;
-    }
     
     .justify-content-center-mobile{
         justify-content: center;
@@ -68,10 +36,6 @@
     
     .text-center-mobile{
         text-align: center;
-    }
-    
-    #upcoming-movies .text-muted-mobile {
-        font-size: 15px !important;
     }
     
     .cta-mobile{
