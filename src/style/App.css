@@ -1,0 +1,68 @@
+.btn-primary {
+  background-color: #5F2EEA;
+  border-color: #5F2EEA;
+}
+
+.btn-primary:hover {
+  background-color: #4f24c6;
+  border-color: #4f24c6;
+}
+
+a {
+  color: #414141;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.text-primary {
+  color: #5F2EEA !important;
+}
+
+.text-muted {
+  color: #A0A3BD !important;
+  font-size: 24px;
+}
+
+.mt-6 {
+  margin-top: 60px;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+#now-showing {
+  background-color: #F5F6F8;
+  margin-top: 70px;
+}
+
+#upcoming-movies {
+  margin-top: 90px;
+}
+
+.btn-outline-primary {
+  border-color: #5F2EEA;
+  --bs-btn-color: #5F2EEA;
+}
+
+.btn-outline-primary:hover {
+  background-color: #5F2EEA;
+  border-color: #5F2EEA;
+}
+
+#cta {
+  margin-top: 100px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+.d-mobile{
+  visibility: hidden;
+  display: none;
+}
+
+.month-view{
+  justify-content: space-around;
+}
