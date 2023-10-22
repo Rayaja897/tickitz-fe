@@ -66,3 +66,24 @@ footer {
 .month-view{
   justify-content: space-around;
 }
+
+.image-poster{
+  width: 200px;
+}
+
+.image-poster img{
+  object-fit: cover;
+  object-position: center;
+}
+
+.single-text{
+  display: -webkit-box;
+  max-width: 300px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.text-center{
+  align-items: center;
+}

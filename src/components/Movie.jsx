@@ -1,12 +1,16 @@
 import React from 'react'
 
-function Movie() {
+function Movie(props) {
+    const { poster, title, genres } = props;
+
     return (
         <div className="image-poster">
-            <img src="/images/poster/Spiderman.jpg" alt="poster" />
-            <h4 className="text-center mt-3">Spider-Man</h4>
-            <span className="text-muted text-center text text-muted-mobile" style={{ fontSize: "16px" }}>
-                Action, Drama, Sci-Fi</span>
+            <img src={poster} width="100%" height="300px" alt="poster" />
+            <h5 className="text-center mt-3 single-text">{title}</h5>
+            <p className="text-muted text-center text text-muted-mobile" style={{ fontSize: "16px" }}>
+                {genres?.map((item, key) => (
+                <span>{genres.length - 1 === key ? item :`${item}, `}</span>))}    
+            </p>
             <div className="d-grid mt-2">
                 <button className="btn btn-outline-primary">Details</button>
             </div>
