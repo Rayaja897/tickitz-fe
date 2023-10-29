@@ -3,9 +3,10 @@ import "../style/Auth.css";
 import "../style/Auth.mobile.css";
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Register() {
+  const navigate = useNavigate();
   const [fullName, setFullName] = React.useState("");
   const [phoneNumber, setPhoneNumber] = React.useState("");
   const [email, setEmail] = React.useState("");
@@ -13,6 +14,12 @@ function Register() {
   const [isLoading, setIsLoading] = React.useState(false);
   const [isSucc, setIsSucc] = React.useState(false);
   const [errMsg, setErrMsg] = React.useState(null);
+
+  React.useEffect(() => {
+    if (localStorage.getItem("token") && localStorage.getItem("profile")) {
+      navigate("/");
+    }
+  });
 
   const handleRegister = () => {
     setIsLoading(true);
