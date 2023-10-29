@@ -79,6 +79,7 @@ function Home() {
                 poster={item.poster}
                 title={item.tittle}
                 genres={item.genres}
+                slug={item.slug}
               />
             ))}
           </div>
@@ -138,6 +139,7 @@ function Home() {
                   poster={item.poster}
                   title={item.tittle}
                   genres={item.genres}
+                  slug={item.slug}
                 />
               ))}
           </div>
