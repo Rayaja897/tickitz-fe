@@ -35,6 +35,10 @@ function Login() {
         localStorage.setItem("token", token);
         localStorage.setItem("profile", JSON.stringify(profile));
         setIsSucc(true);
+
+        setTimeout(() => {
+            window.location.reload();
+        }, 2000);
       })
       .catch((error) => {
         const errEmail = error?.response?.data?.messages?.email?.message;
