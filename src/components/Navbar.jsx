@@ -15,7 +15,9 @@ function Navbar() {
             List Movie
           </a>
         </div>
-        <button className="btn btn-primary px-4 d-desktop">Sign Up</button>
+        <Link to="/register">
+          <button className="btn btn-primary px-4 d-desktop">Sign Up</button>
+        </Link>
         {/* <!-- Navbar Mobile --> */}
         <button
           className="navbar-toggler d-mobile"
@@ -32,13 +34,15 @@ function Navbar() {
       <div className="collapse navbar-collapse mt-4" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item d-flex justify-content-center mt-4">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="nav-item d-flex justify-content-center mt-4">
             <a href="/">List Movie</a>
           </li>
           <li className="nav-item d-flex justify-content-center mt-4">
-            <button className="btn btn-primary px-4">Sign Up</button>
+            <Link>
+              <button className="btn btn-primary px-4">Sign Up</button>
+            </Link>
           </li>
         </ul>
       </div>
