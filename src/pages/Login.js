@@ -39,6 +39,9 @@ function Login() {
                 <input
                   className="form-control form-control-lg"
                   placeholder="Write your email"
+                  onChange={(event) => {
+                    setEmail(event.target.value);
+                  }}
                 />
               </div>
 
@@ -47,6 +50,9 @@ function Login() {
                 <input
                   className="form-control form-control-lg"
                   placeholder="Write your password"
+                  onChange={(event) => {
+                    setPassword(event.target.value);
+                  }}
                 />
               </div>
 
