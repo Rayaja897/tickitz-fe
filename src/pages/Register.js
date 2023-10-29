@@ -60,7 +60,7 @@ function Register() {
     <div id="register_page" style={{ overflow: "hidden" }}>
       <div className="row">
         {/* left content */}
-        <div className="col col-md-7">
+        <div className="col col-md-7 d-mobile">
           <div className="left-content">
             <Link to="/">
               <img src="/images/Logo-white.png" className="logo" alt="logo" />

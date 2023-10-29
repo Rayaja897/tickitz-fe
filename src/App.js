@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import ChooseSeat from "./pages/ChooseSeat";
 
 // list page
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/detail/:slug",
     element: <Detail />,
+  },
+  {
+    path: "/choose-seat/:slug",
+    element: <ChooseSeat />,
   },
 ]);
 
