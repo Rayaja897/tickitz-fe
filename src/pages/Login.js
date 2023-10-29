@@ -61,7 +61,7 @@ function Login() {
     <div id="login_page" style={{ overflow: "hidden" }}>
       <div className="row">
         {/* left content */}
-        <div className="col col-md-7">
+        <div className="col col-md-7 d-desktop">
           <div className="left-content">
             <Link to="/">
               <img src="/images/Logo-white.png" className="logo" alt="logo" />

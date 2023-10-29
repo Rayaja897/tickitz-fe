@@ -49,7 +49,7 @@ function Navbar() {
             <a href="/">List Movie</a>
           </li>
           <li className="nav-item d-flex justify-content-center mt-4">
-            <Link>
+            <Link to="/register">
               <button className="btn btn-primary px-4">Sign Up</button>
             </Link>
           </li>
