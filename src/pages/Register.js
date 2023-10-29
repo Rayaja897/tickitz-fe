@@ -11,7 +11,9 @@ function Register() {
         {/* left content */}
         <div className="col col-md-7">
           <div className="left-content">
-            <img src="/images/Logo-white.png" alt="logo" />
+            <Link to="/">
+            <img src="/images/Logo-white.png" className="logo" alt="logo" />
+            </Link>
             <p className="Text">wait, watch, wow!</p>
           </div>
         </div>

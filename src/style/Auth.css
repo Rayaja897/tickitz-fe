@@ -9,12 +9,44 @@
     flex-direction: column;
 }
 
+#register_page .logo{
+    width: 500px;
+    height: 190px;
+}
+
 #register_page .Text{
     font-size: 48px;
     color: #FFFFFFCC;
 }
 
 #register_page .right-content{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+#login_page .left-content{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/public/images/ImageAuth.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#login_page .logo{
+    width: 500px;
+    height: 190px;
+}
+
+#login_page .Text{
+    font-size: 48px;
+    color: #FFFFFFCC;
+}
+
+#login_page .right-content{
     display: flex;
     align-items: center;
     height: 100vh;
