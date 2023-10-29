@@ -21,7 +21,7 @@ function Navbar() {
         </div>
 
         {profile ? (
-          <img src={profile?.photo} width="50px" height="50px" style={{background: "#e1e1e1", borderRadius:"50%"}} />
+          <img src={profile?.photo} width="50px" height="50px" style={{background: "#e1e1e1", borderRadius:"50%"}} alt="profile" />
         ) : (
           <Link to="/register">
             <button className="btn btn-primary px-4 d-desktop">Sign Up</button>

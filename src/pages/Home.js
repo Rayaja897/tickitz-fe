@@ -10,18 +10,37 @@ function Home() {
   const date = new Date();
   const month = date.toLocaleDateString("default", { month: "short" });
 
-  const [result, setResult] = React.useState([]);
+  const [resultNowShowing, setResultNowShowing] = React.useState([]);
+  const [resultUpComing, setResultUpComing] = React.useState([]);
   const [selectedMonth, setSelectedMonth] = React.useState(month.toLowerCase());
 
+  //lifecycle
+  const handleGetResponse = async () => {
+    try {
+      // get data for now showing
+      const nowShowing = await axios.get(
+        "https://tickitz-be.onrender.com/rayhan/movie/now-showing"
+      );
+
+      if (nowShowing.status === 200) {
+        setResultNowShowing(nowShowing.data.data);
+      }
+
+      // get data for up coming
+      const UpComing = await axios.get(
+        "https://tickitz-be.onrender.com/rayhan/movie/upcoming"
+      );
+
+      if (UpComing.status === 200) {
+        setResultUpComing(UpComing.data.data);
+      }
+    } catch (error) {
+      console.log(`error : ${error}`);
+    }
+  };
+
   React.useEffect(() => {
-    axios
-      .get("http://localhost:3000/api/movie.json")
-      .then((response) => {
-        if (response.status === 200) {
-          setResult(response.data);
-        }
-      })
-      .catch((error) => console.log(`error : ${error}`));
+    handleGetResponse();
   }, []);
   return (
     <div className="App">
@@ -55,16 +74,13 @@ function Home() {
           </div>
           {/* <!-- Content Now Showing for desktop--> */}
           <div className="d-flex justify-content-around mt-5 content">
-            {result
-              .filter((item) => item.isShowing === true)
-              .slice(0, 5)
-              .map((item) => (
-                <MovieComp
-                  poster={item.poster}
-                  title={item.tittle}
-                  genres={item.genres}
-                />
-              ))}
+            {resultNowShowing.slice(0, 5).map((item) => (
+              <MovieComp
+                poster={item.poster}
+                title={item.tittle}
+                genres={item.genres}
+              />
+            ))}
           </div>
         </div>
       </section>
@@ -114,8 +130,7 @@ function Home() {
           {/* <!-- Content Upcoming Movies --> */}
           <div className="d-flex justify-content-around mt-4 content">
             {/* movie founds */}
-            {result
-              .filter((item) => item.isShowing === false)
+            {resultUpComing
               .filter((item) => item.showingMonth === selectedMonth)
               .slice(0, 5)
               .map((item) => (
@@ -127,10 +142,8 @@ function Home() {
               ))}
           </div>
           {/* movie not found */}
-          {result
-            .filter((item) => item.isShowing === false)
-            .filter((item) => item.showingMonth === selectedMonth).length ===
-          0 ? (
+          {resultUpComing.filter((item) => item.showingMonth === selectedMonth)
+            .length === 0 ? (
             <p className="text-center" style={{ fontSize: "20px" }}>
               Movie Not Found
             </p>
