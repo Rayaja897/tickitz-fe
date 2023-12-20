@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Tickitz - Front End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+<a href="https://github.com/Rayaja897/tickitz-fe">
+    <img src="https://i.ibb.co/hyW8rsy/Tickitz-logo.png" alt="Tickitz-logo" border="0">
+</a>
+</div>
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [About Project](#about-project)
+- [Built With](#built-with)
+- [Installation](#installation)
+- [Demo](#demo)
+- [Screenshot project](#screenshot-project)
+- [Contact](#contact)
+- [Related Project](#related-project)
 
-### `npm start`
+## About Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Discover a seamless and exhilarating movie-going experience with Tickitz, your go-to platform for hassle-free cinema ticket bookings! Say goodbye to long queues and last-minute rushes – Tickitz empowers you to secure your favorite seats with just a few clicks. Dive into a world of entertainment where convenience meets excitement. Whether you're a film enthusiast or planning a night out with friends, Tickitz ensures a smooth and efficient ticket booking process. Elevate your cinema experience, embrace simplicity, and let Tickitz be your ticket to a blockbuster night at the movies!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Built with
 
-### `npm test`
+- [**Axios 1.5.1**](https://www.npmjs.com/package/axios)
+- [**Moment 2.29.4**](https://momentjs.com/)
+- [**Bootstrap 5.3.1**](https://getbootstrap.com/)
+- [**React 18.2.0**](https://react.dev/learn/start-a-new-react-project)
+- [**React Redux 8.1.2**](https://react-redux.js.org/introduction/getting-started)
+- [**React Scroll To Top 3.0.0**](https://www.npmjs.com/package/react-scroll-to-top)
+- [**React Router Dom 6.17.0**](https://www.npmjs.com/package/react-router-dom)
+- [**Redux 5.0.0**](https://redux.js.org/introduction/getting-started)
+- [**Redux Persist 6.0.0**](https://www.npmjs.com/package/redux-persist)
+- [**Sweetalert 2.1.2**](https://www.npmjs.com/package/sweetalert)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+Because Tickitz is an open source project, you can also run Tickitz on your localhost. clone this repository and open it using your favorite code editor, and run the terminal like this:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+Git clone https://github.com/yongkisatrias/tickitz-fe.git
+npm i
+npm run start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Coming-soon
 
-### `npm run eject`
+if you want to login, without register:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+email: yongkisatrias@gmail.com
+password: tickitz@12345
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshot Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+|                         Register Page                         |                         Login Page                         |                             Reset Password                             |
+| :-----------------------------------------------------------: | :--------------------------------------------------------: | :--------------------------------------------------------------------: |
+| ![Register Page](https://i.ibb.co/KGwNMhV/Tickitz-signup.png) | ![Login Page](https://i.ibb.co/1zZKXTb/Tickitz-signin.png) | ![Reset Password](https://i.ibb.co/mhrCzq9/Tickitz-reset-password.png) |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+|                          Home Page                          |                          List Movie                          |                            Movie Detail                            |
+| :---------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------------: |
+| ![Home Page](https://i.ibb.co/BL7WvYk/Tickitz-homepage.png) | ![List Movie](https://i.ibb.co/jGmJVGf/Tickitz-upcoming.png) | ![Movie Detail](https://i.ibb.co/NpycGy6/Tickitz-movie-detail.png) |
 
-## Learn More
+|                           Choose Seat                            |                            Payment Page Midtrans                             |                               Payment Successful                                |
+| :--------------------------------------------------------------: | :--------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| ![Choose Seat](https://i.ibb.co/McRp5Vt/Tickitz-choose-seat.png) | ![Payment Page Midtrans](https://i.ibb.co/wr4VRtr/Tickitz-start-payment.png) | ![Payment Successful](https://i.ibb.co/H4HmbWK/Tickitz-payment-successfull.png) |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+|                            Proof of Payment Email                             |                             Digital Ticket Email                             |
+| :---------------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
+| ![Proof of Payment Email](https://i.ibb.co/sjzYzKq/Tickitz-proof-payment.png) | ![Digital Ticket Email](https://i.ibb.co/txfjsRm/Tickitz-digital-ticket.png) |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contact
 
-### Code Splitting
+You can reach me on:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sayarayhanilham@gmail.com)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rayhan-ilham)
+[![github](https://img.shields.io/badge/Github-232b2b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Rayaja897)
 
-### Analyzing the Bundle Size
+I know this project is not perfect, please understand if data occasionally fails to appear or requires a second click, as we are using free-tier deployment for both the front-end and back-end services. Thank you 😊
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are the cornerstone of the open source community, turning it into a remarkable space for learning, inspiring, and innovating. Your contributions are **highly valued**.
 
-### Making a Progressive Web App
+```
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b your/branch`)
+3. Commit your Changes (`git commit -m 'Add amazing feature'`)
+4. Push to the Branch (`git push origin feature/yourbranch`)
+5. Open a Pull Request
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Related Project
 
-### Advanced Configuration
+🚀 [`Demo Tickitz`]()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🚀 [`Tickitz Backend`](https://pijar-camp-batch15-tickitz.cyclic.app/)
