@@ -38,7 +38,7 @@ Discover a seamless and exhilarating movie-going experience with Tickitz, your g
 Because Tickitz is an open source project, you can also run Tickitz on your localhost. clone this repository and open it using your favorite code editor, and run the terminal like this:
 
 ```
-Git clone https://github.com/yongkisatrias/tickitz-fe.git
+Git clone https://github.com/Rayaja897/tickitz-fe.git
 npm i
 npm run start
 ```
