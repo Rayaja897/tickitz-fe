@@ -50,8 +50,8 @@ Coming-soon
 if you want to login, without register:
 
 ```
-email: yongkisatrias@gmail.com
-password: tickitz@12345
+email: rayhangt89@gmail.com
+password: rayhan123
 ```
 
 ## Screenshot Project
